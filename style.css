@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    0deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 3%,
+    rgba(230, 69, 252, 1) 100%
+  );
+  background-attachment: fixed;
+  font-size: 20px;
+}
+.container {
+  display: flex;
+}
+
+#form {
+  width: 500px;
+  margin: 10vh;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 15px;
+}
+h1 {
+  text-align: center;
+  color: #e643f5;
+}
+.heading {
+  font-weight: bolder;
+}
+#genderOptions {
+  display: flex;
+  gap: 20px;
+}
+#form button {
+  background-color: #e643f5;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  width: 100%;
+  padding: 15px;
+  cursor: pointer;
+}
+
+#form button:active {
+  transform: scale(0.98);
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group input,
+textarea,
+select {
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid aquamarine;
+}
+.form-group textarea,
+input:focus {
+  outline: none;
+}
+.errormessage {
+  color: red;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.form-group.failure input,
+.form-group.failure textarea,
+.form-group.failure select {
+  border: 1px solid red;
+}
+.form-group.success input,
+.form-group.successtextarea,
+.form-group.success select {
+  border: 2px solid green;
+}
+table,
+th,
+td {
+  border: 2px solid rgb(207, 140, 140);
+  border-collapse: collapse;
+  width: auto;
+}
+#table {
+  display: flex;
+  margin: 10vh 5vh;
+  border: none;
+}
+tbody tr:hover {
+  background-color: gray;
+}
